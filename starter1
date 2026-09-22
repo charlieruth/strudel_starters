@@ -1,0 +1,34 @@
+// Strudel Starter 1
+
+// double forward slash for commenting and annotating!
+
+/* for multi-line
+comment
+writing */
+
+// $: prefix = sound will play
+// _$: prefix = sound will not play
+// sounds can be commented (//) away also!
+
+// global tempo set
+setcpm(120/4)
+
+// drums
+// each drum part here treated separately for mixing and effects 
+$: sound("bd bd bd bd").bank("mpc1000").gain(0.5)
+
+$: sound("~ sd ~ sd").bank("mpc1000").gain(0.4)
+
+$: sound("hh hh hh hh hh hh hh oh").bank("mpc1000").gain(0.3)
+
+$: sound("~ clap:8 ~ clap:4").gain(0.6)
+
+/* additional possible drums:
+rim(rimshot), lt(low-tom), mt(mid-tom), ht(hi-tom), rd(ride), cr(crash)
+*/
+
+// bass
+
+// chords
+
+// melody 
