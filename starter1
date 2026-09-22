@@ -29,6 +29,23 @@ rim(rimshot), lt(low-tom), mt(mid-tom), ht(hi-tom), rd(ride), cr(crash)
 
 // bass
 
+$: note("[[36 36] [~ 38] [39 39] [~ 43] [36 36] [~ 38] [39 39] [~ 43]]/2").sound("gm_synth_bass").gain(0.5)
+
+
 // chords
 
+$: note("[[48,55] [51,58]]/2 [[ ~ ~ ] [46, 53]]/4").sound("steinway").gain(0.4)
+
 // melody 
+
+$: note("[60@4 ~ 63@4 ~]/4").sound("gm_electric_guitar_muted, gm_flute").gain(0.5)
+  .attack("<0.5, 0.7>")
+  .decay(0.1)
+  .sustain(0.5)
+  .release(1.0)
+
+_$: note("[67 65 63 65]/2").sound("gm_electric_guitar_muted, gm_flute").gain(0.5)
+  .attack("<0.5, 0.7>")
+  .decay(0.1)
+  .sustain(0.5)
+  .release(1.0)
